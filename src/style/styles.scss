@@ -6,11 +6,12 @@
 @import 'components/index';
 @import 'pages/index';
 
-// copy from benjamin_code params not sur about all point that follow
-body {
-  padding: 32px;
+.content {
+  width: 1000px;
+  margin: 0 auto;
 }
 
+// copy from benjamin_code params not sur about all point that follow
 .hero {
   height: 100%;
   background: antiquewhite;
@@ -32,4 +33,61 @@ body {
 
 a {
   text-decoration: underline;
+}
+
+// end of benjamin code
+
+/* Smallest device */
+@media (min-width: 100px) and (max-width: 355px) {
+  .content {
+    width: 300px;
+  }
+}
+
+/* Smallest device - Bigger Phone */
+@media (min-width: 360px) and (max-width: 575px) {
+  .content {
+    width: 340px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 675px) {
+  .content {
+    width: 550px;
+  }
+}
+
+@media (min-width: 676px) and (max-width: 767px) {
+  .content {
+    width: 650px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .content {
+    width: 700px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .content {
+    width: 950px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .content {
+    width: 1000px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1600px) {
+  .content {
+    width: 1500px;
+  }
 }
