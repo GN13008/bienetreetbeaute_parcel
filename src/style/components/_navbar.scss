@@ -27,7 +27,9 @@ nav {
     letter-spacing: .02em;
   }
 
-  li:hover{
-    color: $font-light;
+  li {
+    a:hover {
+      color: $font-light;
+    }
   }
 }
