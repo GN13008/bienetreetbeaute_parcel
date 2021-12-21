@@ -6,10 +6,11 @@ nav {
   // z-index: 10000;
   // transition: all .5s;
   border-bottom: 1px solid #eee;
-  .content{
+  
+  .nav-content{
     display: flex;
     justify-content: space-between;
-    padding: 16px 0;
+    padding: 16px 32px;
     font-weight: 300;
     font-size: 16px;
     text-transform: uppercase;
@@ -24,5 +25,9 @@ nav {
     display: inline-block;
     margin-right: 10px;
     letter-spacing: .02em;
+  }
+
+  li:hover{
+    color: $font-light;
   }
 }
