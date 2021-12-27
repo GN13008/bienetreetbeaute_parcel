@@ -1,5 +1,5 @@
 .banner{
-  background-image: linear-gradient(rgba(39,56,72,0.4),rgba(39,56,72,0.4)), url(/src/media/photos/etang_thau.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.6)), url(/src/media/photos/etang_thau.png);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -17,6 +17,11 @@
       margin-bottom: 16px;
       font-size: 32px;
       font-weight: 500;
+    }
+    
+    h2 {
+      font-size: 20px;
+      font-weight: 400;
     }
   }
 }
