@@ -11,8 +11,8 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 16px 32px;
-    font-weight: 300;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 14px;
     text-transform: uppercase;
   }
 
@@ -23,6 +23,7 @@ nav {
 
   li{
     display: inline-block;
+    color: $font-blue;
     margin-right: 10px;
     letter-spacing: .02em;
   }

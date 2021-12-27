@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
+
 body {
-  font-family: "Monserrat", serif;
+  font-family: "Montserrat", serif;
   background-color: #fff;
   color: $font-dark;
   font-weight: 300;
@@ -7,7 +9,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-family: "Monserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: $font-dark;
   font-weight: 300;
   letter-spacing: .02em;
