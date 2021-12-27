@@ -26,11 +26,12 @@ nav {
     color: $font-blue;
     margin-right: 10px;
     letter-spacing: .02em;
+    background: linear-gradient(to top, $font-blue 0%, $font-blue 7%, transparent 7.01%) no-repeat;
+    background-size: 0 100%;
+    transition: background-size .4s;
   }
 
-  li {
-    a:hover {
-      color: $font-light;
-    }
+  li:hover {
+    background-size: 100% 100%;
   }
 }
