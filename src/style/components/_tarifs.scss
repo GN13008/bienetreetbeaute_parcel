@@ -1,0 +1,45 @@
+.tarifs_container {
+  display: flex;
+  justify-content: space-between;
+  // flex-wrap: wrap;
+}
+
+.tarif_group{
+  margin: 0 16px;
+  padding: 16px;
+  width: 250px;
+  
+  h2 {
+    font-size: 20px;
+    color: $font-dark;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+  h3 {
+    font-size: 16px;
+    color: $font-dark;
+    margin-bottom: 8px;
+  }
+
+  .soin{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    .price {
+      flex-shrink: 0;
+      margin-left: 16px;
+    }
+  }
+
+  p {
+    font-size: 14px;
+  }
+  .detail {
+    font-style: italic;
+    font-size: 12px;
+  }
+
+  ul {
+    margin-bottom: 16px;
+  }
+}
