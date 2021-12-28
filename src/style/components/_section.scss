@@ -6,7 +6,10 @@
     }
     .img_container {
       position: relative;
+      // background-color: red;
       height: 550px;
+      max-width: 1100px;
+      margin: 0 auto;
       img{
         border-radius: 2px;
         margin: 32px;

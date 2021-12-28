@@ -2,7 +2,7 @@
   "name": "my-project",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel",
+    "start": "parcel src/index.html src/tarifs/index.html",
     "build": "parcel build"
   },
   "devDependencies": {
