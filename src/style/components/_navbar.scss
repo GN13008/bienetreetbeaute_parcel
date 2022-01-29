@@ -6,7 +6,37 @@ nav {
   // z-index: 10000;
   // transition: all .5s;
   border-bottom: 1px solid #eee;
+    .nav-content{
+      display: flex;
+      justify-content: space-between;
+      padding: 16px 32px;
+      font-weight: 500;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
   
+    ul{
+      display: block;
+      text-align: center;
+    }
+  
+    li{
+      display: inline-block;
+      color: $font-blue;
+      margin-right: 10px;
+      letter-spacing: .02em;
+      background: linear-gradient(to top, $font-blue 0%, $font-blue 7%, transparent 7.01%) no-repeat;
+      background-size: 0 100%;
+      transition: background-size .4s;
+    }
+  
+    li:hover {
+      background-size: 100% 100%;
+    }
+}
+
+.display-phone{
+  display: none;
   .nav-content{
     display: flex;
     justify-content: space-between;
@@ -26,12 +56,37 @@ nav {
     color: $font-blue;
     margin-right: 10px;
     letter-spacing: .02em;
-    background: linear-gradient(to top, $font-blue 0%, $font-blue 7%, transparent 7.01%) no-repeat;
-    background-size: 0 100%;
-    transition: background-size .4s;
   }
+}
 
-  li:hover {
-    background-size: 100% 100%;
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  border-radius: 8px;
+  top: 30px;
+  right: -5px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Display on Phone */
+@media (max-width: 768px) {
+  .display-desktop {
+    display: none;
+  }
+  .display-phone {
+    display: block;
   }
 }

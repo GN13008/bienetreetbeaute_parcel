@@ -1,7 +1,7 @@
 .tarifs_container {
-  display: flex;
-  justify-content: space-between;
-  // flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
 }
 
 .tarif_group{
@@ -43,5 +43,23 @@
   ul {
     margin-top: 16px;
     margin-bottom: 16px;
+  }
+}
+
+/* Iphone and Small devices */
+@media (max-width: 768px) {
+  .tarifs_container {
+    grid-template-columns: 1fr;
+  }
+  .tarif_group {
+    margin: 0 auto;
+  }
+}
+
+
+/* Smallest device - Bigger Phone */
+@media (min-width: 769px) and (max-width: 1599px) {
+  .tarifs_container {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
